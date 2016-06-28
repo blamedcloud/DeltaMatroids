@@ -20,8 +20,9 @@ class DeltaMatroid:
 		self.feasible = f
 		
 	def check_validity(self, quiet = False):
-		print self.ground
-		print self.feasible
+		if not quiet:
+			print self.ground
+			print self.feasible
 		valid = True
 		if (len(self.feasible) == 0) or (len(self.ground) == 0):
 			if not quiet:
