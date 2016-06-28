@@ -3,7 +3,7 @@
 
 class RibbonGraph:
 	def __init__(self):
-		vertices = []
-		edges = []
+		self.vertices = []
+		self.edges = []
 		
 
