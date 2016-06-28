@@ -10,9 +10,9 @@ class Cycle:
 	def front(self):
 		return self.elements[self.f]
 		
-	def set_elements(self, el):
+	def set_elements(self, el, fr = 0):
 		self.elements = [x for x in el]
-		self.f = 0
+		self.f = fr
 		self.size = len(self.elements)
 		
 	def init_front(self):
