@@ -68,6 +68,7 @@ class DeltaMatroid:
 	def is_delta_matroid(self):
 		return check_validity(self, True)
 		
+	#as of now, this function assumes self is a valid delta_matroid
 	def is_matroid(self):
 		valid = True
 		if len(self.feasible) == 0:
